@@ -19,7 +19,7 @@ else()
 endif()
 
 # Fix to avoid OpenCV package confusion with ROS melodic
-find_package(OpenCV 3.3.1 EXACT QUIET)
+find_package(OpenCV 3.2.0 EXACT QUIET)
 if (NOT OpenCV_FOUND)
     find_package(OpenCV 3 QUIET)
 endif()
