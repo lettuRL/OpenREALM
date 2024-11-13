@@ -119,10 +119,10 @@ fi
 OPENCV_VERSION=$(/usr/bin/opencv_version)
 read OPENCV_VERSION_MAJOR OPENCV_VERSION_MINOR OPENCV_VERSION_PATCH <<< ${OPENCV_VERSION//[^0-9]/ }
 
-if [[ $OPENCV_VERSION == "3.3.1" ]]; then
-        echo "[OK] OpenCV Version is 3.3.1"
+if [[ $OPENCV_VERSION == "3.2.0" ]]; then
+        echo "[OK] OpenCV Version is 3.2.0"
 else
-        echo "[Warning] OpenCV Version $OPENCV_VERSION detected. It is recommended to build OpenREALM with OpenCV 3.3.1."
+        echo "[Warning] OpenCV Version $OPENCV_VERSION detected. It is recommended to build OpenREALM with OpenCV 3.2.0."
         while true; do
           read -p "Continue anyway? [yes/no]" yn
           case $yn in
