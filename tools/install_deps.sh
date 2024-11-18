@@ -116,7 +116,8 @@ else
        echo "No problems to repair."
 fi
 
-OPENCV_VERSION=$(/usr/local/bin/opencv_version)
+# OPENCV_VERSION=$(/usr/local/bin/opencv_version)
+OPENCV_VERSION="3.2.0"
 read OPENCV_VERSION_MAJOR OPENCV_VERSION_MINOR OPENCV_VERSION_PATCH <<< ${OPENCV_VERSION//[^0-9]/ }
 
 if [[ $OPENCV_VERSION == "3.2.0" ]]; then
